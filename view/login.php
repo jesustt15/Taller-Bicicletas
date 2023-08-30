@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../view/css/login.css">
+    <link rel="stylesheet" href="http://localhost:8888/Taller-Bicicletas/assets/css/login.css" type="text/css">
     <title>Login</title>
 </head>
 <body>
