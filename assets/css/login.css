@@ -43,3 +43,10 @@ label{
 h1{
     color: aqua;
 }
+
+button{
+    border-radius: 2px;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    padding: 4%;
+}

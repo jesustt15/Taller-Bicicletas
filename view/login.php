@@ -16,7 +16,7 @@
                         <div class="section-inputs">
                             <label for="username">
                                 <span>Username</span>
-                                <input id="username" name="username" />
+                                <input id="username" name="username" placeholder="nombre de usuario"/>
                             </label>
                             <label for="password">
                                 <span>Password</span>
@@ -24,9 +24,7 @@
                             </label>
                             <button type="submit" class="submit-btn">entrar</button>
                         </div>
-                    
-        </div>
-        </form>
-    
+        </div>                
+        
 </body>
 </html>
