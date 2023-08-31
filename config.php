@@ -1,6 +1,6 @@
 <?php
 
-define('URL', 'http://localhost:8080/pruebasphp/');
+define('URL', 'http://localhost:8080/Taller-Bicis/');
 
 define('HOST', 'localhost');
 define('DB', 'taller_bicis');
