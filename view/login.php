@@ -4,15 +4,15 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost:8888/Taller-Bicicletas/assets/css/login.css" type="text/css">
     <title>Login</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
     
 </head>
 <body>
         
         <div class="container">
             <img src="./img/ULTRABIKEX.png" alt="logo-ubx" >
-                    <form action="" method="">
+                    <form action="?c=User&a=Entrar" method="post">
                         <div class="section-inputs">
                             <label for="username">
                                 <span>Username</span>
@@ -22,8 +22,9 @@
                                 <span>Password</span>
                                 <input id="password" name="password" placeholder="6+ caracteres" />
                             </label>
-                            <button type="submit" class="submit-btn">entrar</button>
+                            <button type="submit" class="submit-btn" value="Entrar" >entrar</button>
                         </div>
+                    </form>    
         </div>                
         
 </body>

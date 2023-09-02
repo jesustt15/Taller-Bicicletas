@@ -1,13 +1,27 @@
 <?php
+require_once 'model/database_m.php';
+// require_once 'view/login/login.php';
 
-require_once("config.php");
-require_once("controller/index.php");
-if(isset($_GET['n'])){
-    if(method_exists("ModeloController",$_GET['n'])){
-        ModeloController::{$_GET['n']}();
-    }
+// Todo esta lógica hara el papel de un FrontController
+if(!isset($_REQUEST['c']))
+{
+    $controller = 'usuario';
+    require_once "controller/$controller.controller.php";
+    $controller = ucwords($controller) . 'Controller';
+    $controller = new $controller;
+    $controller->Index();    
 }
-else{
-    ModeloController::login();
-    }
-?>
+else
+{
+    // Obtenemos el controlador que queremos cargar
+    $controller = strtolower($_REQUEST['c']);
+    $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Login';
+    
+    // Instanciamos el controlador
+    require_once "controller/$controller.controller.php";
+    $controller = ucwords($controller) . 'Controller';
+    $controller = new $controller;
+    
+    // Llama la accion
+    call_user_func( array( $controller, $accion ) );
+}
